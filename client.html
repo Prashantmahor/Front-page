@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codies Hub Clients</title>
+  <style>
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(50, 229, 187, 0.2);
+  margin: 0;
+  padding: 0;
+}
+image{
+    height:100px ;
+    width: 100px;
+    border-radius: ;
+}
+header {
+  background-color: #246683;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+header h1{
+    font-size: 50px;
+}
+.clients-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.client-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Codies Hub Clients</h1>
+  </header>
+
+  <section class="clients-section">
+    <!-- Client cards will go here -->
+  </section>
+  <script>// script.js
+    const clients = [
+      {
+        name: 'Shagun',
+        
+        demand: 'Learn Python programming',
+        image: '#', // Replace with actual image URLs
+      },
+      {
+        name: 'Shivam',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Nandini',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Shriyansh',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Priya',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Shivam',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Kunti',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Shalu',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Aman',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Adi',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Ravi',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Ensl',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Rani',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Kamal',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Raj',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'KAli',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'jin',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Sim',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Subhash',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Sanjay',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Akash',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Aditya',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Arun',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      {
+        name: 'Jay',
+        demand: 'Learn Python programming',
+        image: 'client1.jpg', // Replace with actual image URLs
+      },
+      // Add more clients as needed
+    ];
+    
+    const clientsSection = document.querySelector('.clients-section');
+    
+    clients.forEach((client) => {
+      const card = document.createElement('div');
+      card.classList.add('client-card');
+      card.innerHTML = `
+        <img src="${client.image}" alt="${client.name}">
+        <h3>${client.name}</h3>
+        <p>${client.demand}</p>
+      `;
+      clientsSection.appendChild(card);
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .wrapper{
+        width: 100%;
+        max-width: 400px;
+        margin: 200px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    }
+    .wrapper h2{
+        text-align: center;
+        font-weight: 600;
+        font-size:xx-large;
+        margin-bottom: 20px;
+    }
+    .wrapper input[type="text"],
+    .wrapper input[type="email"],
+    .wrapper textarea{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    }
+    .wrapper textarea{
+        height: 100px;
+        resize: none;
+    }
+    .wrapper button{
+        background: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 0px rgba(20, 221, 194, 0.2);
+    }
+    .wrapper button:hover{
+        background: #3e8e41;
+    }
+   </style>
+</head>
+<body style="background-color: rgba(50, 229, 187, 0.2);">
+    <div class="wrapper">
+        <h2>Contact Us</h2>
+        <form action="">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button>Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
